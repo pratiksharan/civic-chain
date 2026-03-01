@@ -1,6 +1,6 @@
 # CivicChain
 
-> AI-powered civic grievance platform for Bengaluru citizens — file complaints, track SLAs, draft RTI applications, and escalate to legal authorities.
+> AI-powered civic grievance platform for citizens — file complaints, track SLAs, draft RTI applications, and escalate to legal authorities.
 
 **Live demo:** [civicchain.vercel.app](https://civicchain.vercel.app)
 
@@ -13,7 +13,7 @@
 | Framework | React 18 + TypeScript |
 | Styling | Tailwind CSS v3 |
 | Build Tool | Vite 5 |
-| AI | Google Gemini 1.5 Flash |
+| AI | Google Gemini 2.5 Flash |
 | Deployment | Vercel (with Serverless Functions) |
 | API Security | Vercel Environment Variables (key never reaches browser) |
 
@@ -173,7 +173,7 @@ The free tier gives **1,500 requests/day** — more than enough for a civic tool
 
 ---
 
-## Coverage
+## Coverage (Currently only available for Bangalore)
 
 Currently covers Bengaluru / Karnataka:
 
