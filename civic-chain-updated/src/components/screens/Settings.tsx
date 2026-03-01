@@ -1,6 +1,7 @@
 // src/components/screens/Settings.tsx
 import { T } from '@/lib/theme';
 import { Card, SL } from '@/components/ui';
+import { PrimaryBtn, GhostBtn } from '@/components/ui/Button';
 import type { SettingsValues } from '@/types';
 
 interface SettingsProps {
@@ -30,6 +31,9 @@ function Toggle({ on, onToggle }: { on: boolean; onToggle: () => void }) {
 export function Settings({ settingsVals, onSettingsChange, notifPush, onNotifPush, notifEmail, onNotifEmail, notifLaws, onNotifLaws, city }: SettingsProps) {
   const inputCls = 'w-full px-3 py-2.5 rounded-lg text-sm outline-none font-sans';
   const inputStyle = { border: `1px solid ${T.bord}`, background: T.bg, color: T.txt, fontFamily: 'inherit', boxSizing: 'border-box' as const };
+
+  const storedKey = sessionStorage.getItem('civicchain_apikey') || '';
+  const [apiKey, setApiKeyLocal] = window.__apiKeyState ?? ['', () => {}];
 
   const notifs = [
     { key: 'push', state: notifPush, set: onNotifPush, label: 'Push Notifications', desc: 'Receive alerts on your device when your complaint status changes.', icon: '📱' },

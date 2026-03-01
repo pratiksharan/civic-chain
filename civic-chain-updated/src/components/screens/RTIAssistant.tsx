@@ -24,7 +24,7 @@ const RTI_STEPS = (deptName: string, rtiFee: string) => [
   { step: 'Save Reference Number', tip: 'The portal generates a Registration Number. Save for First Appeal if needed.' },
 ];
 
-export function RTIAssistant({ dept, rtiDraft, loading, onGenerateRTI }: RTIAssistantProps) {
+export function RTIAssistant({ analysis, dept, rtiDraft, loading, onGenerateRTI }: RTIAssistantProps) {
   const [checked, setChecked] = useState<number[]>([]);
   const [expanded, setExpanded] = useState<number | null>(null);
   const steps = RTI_STEPS(dept.dept, dept.intelligence.rtiFee);

@@ -76,7 +76,7 @@ export function AuthScreen({ authScreen, onSetAuth }: AuthScreenProps) {
     setError('');
 
     // Sign up with Supabase
-    const { error: authError } = await supabase.auth.signUp({
+    const { data, error: authError } = await supabase.auth.signUp({
       email: regEmail,
       password: regPass,
       options: {

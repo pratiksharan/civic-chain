@@ -1,0 +1,37 @@
+// src/lib/theme.ts
+// Central theme object — used for dynamic/conditional colors that can't be done with Tailwind alone.
+// For static classes, use Tailwind civic-* color utilities instead.
+
+export const T = {
+  bg:              '#f6f7f5',
+  surf:            '#ffffff',
+  surfAlt:         '#f0f2ef',
+  bord:            '#dde1da',
+  bordLight:       '#eaece8',
+  txt:             '#1c2b1e',
+  txtMid:          '#3a4d3d',
+  muted:           '#7a8c7e',
+  dim:             '#a0b0a4',
+  blue:            '#2c5f8a',
+  blueLight:       '#eaf1f8',
+  teal:            '#2e7d62',
+  tealLight:       '#ebf5f0',
+  tealBord:        '#b0d9c8',
+  red:             '#c0392b',
+  redLight:        '#fdf1f0',
+  amb:             '#b45309',
+  ambLight:        '#fef9ee',
+  grn:             '#1a6e3f',
+  grnLight:        '#eefaf2',
+  dot:             '#4caf7d',
+  sideBase:        '#0f1923',
+  sideSurf:        '#162130',
+  sideBord:        '#1e2e3f',
+  sideTxt:         '#c8d8e8',
+  sideMuted:       '#7a96ab',
+  sideDim:         '#4a6070',
+  sideActive:      '#1a3a50',
+  sideActiveBord:  '#2e9d82',
+  sideHover:       '#162d40',
+  sideDot:         '#2e9d82',
+} as const;
