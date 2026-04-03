@@ -121,14 +121,6 @@ Open [http://localhost:3000](http://localhost:3000)
 
 > **Note:** Use `vercel dev` instead of `npm run dev` so the `/api/gemini` serverless function runs alongside the frontend. `npm run dev` alone won't proxy the API calls.
 
----
-
-### Step 4 — Auto-deploy
-
-Every `git push` to `main` automatically triggers a new Vercel deployment. No manual steps needed.
-
----
-
 ## Getting a Free Gemini API Key
 
 1. Go to [aistudio.google.com](https://aistudio.google.com)
