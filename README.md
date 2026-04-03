@@ -123,39 +123,6 @@ Open [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## Deploying to Vercel
-
-### Step 1 — Push to GitHub
-
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/civicchain.git
-git push -u origin main
-```
-
-### Step 2 — Import to Vercel
-
-1. Go to [vercel.com](https://vercel.com) → **Add New Project**
-2. Connect your GitHub account
-3. Select the `civicchain` repository
-4. Leave all build settings as default (Vercel auto-detects Vite)
-5. Click **Deploy**
-
-### Step 3 — Add the API Key
-
-1. In Vercel dashboard → your project → **Settings** → **Environment Variables**
-2. Add:
-   - **Name:** `GEMINI_API_KEY`
-   - **Value:** your key from [aistudio.google.com](https://aistudio.google.com)
-   - **Environments:** Production, Preview, Development ✓
-3. Click **Save**
-4. Go to **Deployments** → click **Redeploy** on the latest deployment
-
-Your app is now live and AI features are fully working.
-
 ### Step 4 — Auto-deploy
 
 Every `git push` to `main` automatically triggers a new Vercel deployment. No manual steps needed.
