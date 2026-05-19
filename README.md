@@ -1,4 +1,4 @@
-# CivicChain
+# 🛡️ CivicChain
 
 > AI-powered civic grievance platform for citizens — file complaints, track SLAs, draft RTI applications, and escalate to legal authorities.
 
