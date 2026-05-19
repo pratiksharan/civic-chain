@@ -2,8 +2,6 @@
 
 > AI-powered civic grievance platform for citizens — file complaints, track SLAs, draft RTI applications, and escalate to legal authorities.
 
-**Live demo:** [civicchain.vercel.app](https://civicchain.vercel.app)
-
 ---
 
 ## Tech Stack
